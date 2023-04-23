@@ -4,6 +4,8 @@ Project was last updated on: 6 November 2022
 
 **This was a university project for an analysis of observations unit.**
 
+## Report Overview (parts from my introduction, methodology and discussion sections of my report)
+
 Complaints in healthcare, specifically towards doctors who work in emergency, feel as though the events where they receive oppositions taken by others are perpetuated or out of the norm. However, some analysis revealed patterns as for certain demographics may play a part in the number of complaints a doctor gets. In this article, a dataset of 94 hospital doctors who worked in an emergency department, was used to examine how variables such as gender, revenue, visits, residency status and number of hours worked, all recorded over the last year data, have any impact on the number of complaints filed against ER doctors. 
 
 The main findings of this study were that a zero inflated negative binomial model with variables visits, revenue, hours and gender without interactions were able to best predict the likelihood or the counts odds of a doctor receiving more complaints. Furthermore, it was discovered that the variable visit was the most significant in determining whether a doctor were to receive more complaints, followed by the revenue. Additionally, it was found that female doctors are 69.775% less likely to get complaints than male doctors, and the fact that doctors generally receive fewer complaints when they work more hours. It is worth mentioning that the variable revenue has a negative coefficient, as do the variable hours. 
