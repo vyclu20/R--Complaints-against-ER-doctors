@@ -50,7 +50,8 @@ library(magrittr)
  histogram(~complaints | gender, compdat, breaks = 0:18 - 0.5, 
            main = "Complaints")
  
- #did not remove outliers, for after further inspection it became obvious that the data is zero inflated and that it would make the already limited dataset less reliable if I were to remove a value that was not 0
+ #did not remove outliers, for after further inspection,
+ #it became obvious that the data is zero inflated and that it would make the already limited dataset less reliable if I were to remove a value that was not 0
  
  #Step 2: Checking for potential models such as poisson, quasi and negative binomial. Dispersion as well
  
@@ -73,7 +74,9 @@ library(magrittr)
  compdat.nb$deviance/compdat.nb$df.residual
  summary(compdat.nb)
  
- #Executing the codes above, dispersion was detected using the deviance to residual value. We can see that both the poisson models are overdispersed, and since we can't do much with quasi (no AIC, etc), we assume that quasi is not a suitable model for this data.
+ #Executing the codes above, dispersion was detected using the deviance to residual value. 
+ #We can see that both the poisson models are overdispersed, and since we can't do much with quasi (no AIC, etc), 
+ #we assume that quasi is not a suitable model for this data.
  dispersiontest(compdat.p)
  nb.dharm <- simulateResiduals(compdat.nb, refit=T, n=99)
  plotSimulatedResiduals(compdat.nb)
@@ -85,7 +88,8 @@ library(magrittr)
  box()
  AIC(compdat.p,compdat.nb)
  
- #Comparing the AIC's of the poisson and negative binomial models, it shows that the negative binomial model has a lower AIC, thus suggesting that negative binomial is a much better model than the poisson.
+ #Comparing the AIC's of the poisson and negative binomial models, it shows that the negative binomial model has a lower AIC, 
+ #thus suggesting that negative binomial is a much better model than the poisson.
  
  #Step 3: Zero inflation models, with and without interactions. Doing tests such as likelihood tests and AIC tests to see which model is the best fit
  #Since it is zero-inflated, it is only fair we go for zero-inflated models of Poisson ad Negative Binomial
