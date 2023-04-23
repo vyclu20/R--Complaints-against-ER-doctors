@@ -159,4 +159,6 @@ library(magrittr)
  lrtest(compdat.zinb1,compdat.zinb8)
  
  #Checking AIC shows that the model without interactions has a lower AIC, but that is expected considering the fact that it is simpler. 
- #Since it may be conflicting to use a model without interactions than one with, we want to check for the goodness of fit of both models. Running the likelihood test shows that the p value is less than 0.05, so we will not reject the null hypothesis and take the simpler model: zinb1, the model without interactions, as our final model.
+ #Since it may be conflicting to use a model without interactions than one with, we want to check for the goodness of fit of both models. 
+ #Running the likelihood test shows that the p value is less than 0.05, so we will not reject the null hypothesis and take the simpler model: 
+ #zinb1, the model without interactions, as our final model.
