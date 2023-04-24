@@ -31,4 +31,4 @@ The following are the variables in the data.
 
 > hours: total number of hours the doctor worked in a year
 
-Aim of the analysis: To determine the effect of the variables on the number of complaints received.
+Aim of the analysis: To determine the effect of the variables on the number of complaints received.
