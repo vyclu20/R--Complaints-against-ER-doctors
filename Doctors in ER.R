@@ -18,7 +18,7 @@ library(magrittr)
  summary(compdat)
  compdat[compdat$complaints > 5,1:6]
  compdat[compdat$visits>2271 & compdat$hours>1469 & compdat$complaints > 5,1:6]
- zeros<compday[compdat$complaints==0,1:6]
+ zeros<compdat[compdat$complaints==0,1:6]
  
  sd(compdat$visits)>sd(compdat$revenue)
  sd(compdat$complaints)>sd(compdat$hours)
